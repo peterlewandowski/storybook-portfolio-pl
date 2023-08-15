@@ -4,7 +4,7 @@ export const About = () => {
     return (
         <section id="about">
             <div className="grid grid-cols-2">
-                <div className="flex flex-col gap-10 overflow-hidden">
+                <div className="p-40 pr-24 flex flex-col gap-10 overflow-hidden">
                     <h2 className="font-fraunces text-[2.5rem] font-black">Transform your brand</h2>
                     <p className="font-barlow font-thin">
                         We are a full-service creative agency specializing in helping brands grow
@@ -31,7 +31,7 @@ export const About = () => {
                         objectFit="cover"
                     />
                 </div>
-                <div className="flex flex-col gap-10">
+                <div className="p-40 pl-24 flex flex-col gap-10">
                     <h2 className="font-fraunces text-[2.5rem] font-black">
                         Stand out to the right audience
                     </h2>
