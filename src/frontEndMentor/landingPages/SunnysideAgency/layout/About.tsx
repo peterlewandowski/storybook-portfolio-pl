@@ -4,7 +4,7 @@ export const About = () => {
     return (
         <section id="about">
             <div className="grid grid-cols-2">
-                <div className="p-40 pr-24 flex flex-col gap-10 overflow-hidden">
+                <div className="flex flex-col gap-10 overflow-hidden p-40 pr-24">
                     <h2 className="font-fraunces text-[2.5rem] font-black">Transform your brand</h2>
                     <p className="font-barlow font-thin">
                         We are a full-service creative agency specializing in helping brands grow
@@ -31,7 +31,7 @@ export const About = () => {
                         objectFit="cover"
                     />
                 </div>
-                <div className="p-40 pl-24 flex flex-col gap-10">
+                <div className="flex flex-col gap-10 p-40 pl-24">
                     <h2 className="font-fraunces text-[2.5rem] font-black">
                         Stand out to the right audience
                     </h2>
@@ -44,7 +44,7 @@ export const About = () => {
                         Learn more
                     </a>
                 </div>
-                <div className="relative">
+                <div className="relative min-h-[37.5rem] [&>*]:text-center">
                     <Image
                         src={require("../images/desktop/image-graphic-design.jpg")}
                         alt="transform"
@@ -52,25 +52,28 @@ export const About = () => {
                         objectFit="cover"
                         objectPosition="center"
                     />
-
-                    <div className="relative">
-                        <h2>Graphic design</h2>
-                        <p>
+                    <div className="relative flex flex-col gap-6 px-40 pt-96 pb-10">
+                        <h2 className="font-fraunces text-2xl font-black text-teal-900">
+                            Graphic design
+                        </h2>
+                        <p className="font-barlow text-base font-semibold text-slate-600">
                             Great design makes you memorable. We deliver artwork that underscores
                             your brand message and captures potential clients’ attention.
                         </p>
                     </div>
                 </div>
-                <div className="relative">
+                <div className="relative [&>*]:text-center">
                     <Image
                         src={require("../images/desktop/image-photography.jpg")}
                         alt="photography"
                         fill
                         objectFit="cover"
                     />
-                    <div className="relative">
-                        <h2>Photography</h2>
-                        <p>
+                    <div className="relative flex flex-col gap-6 px-40 pb-10 pt-96">
+                        <h2 className="font-fraunces text-2xl font-black text-cyan-950">
+                            Photography
+                        </h2>
+                        <p className="font-barlow text-base font-semibold text-cyan-900">
                             Increase your credibility by getting the most stunning, high-quality
                             photos that improve your business image.
                         </p>
