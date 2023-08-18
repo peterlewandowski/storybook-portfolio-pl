@@ -1,10 +1,7 @@
 import React from "react";
 import { Barlow, Fraunces } from "next/font/google";
-import { About } from "./layout/About";
-import { Footer } from "./layout/Footer";
-import { Projects } from "./layout/Projects";
-import { Testimonials } from "./layout/Testimonials";
-import { TopSection } from "./layout/TopSection";
+import { About, Footer, Projects, Testimonials, TopSection } from "./layout";
+
 
 const barlow = Barlow({
     subsets: ["latin"],

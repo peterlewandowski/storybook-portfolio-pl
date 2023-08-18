@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Header } from "./Header";
-import { Hero } from "./Hero";
+import { Header, Hero } from "../components";
 
 export const TopSection = () => {
     return (
