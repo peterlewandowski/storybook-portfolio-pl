@@ -1,16 +1,16 @@
 import Image from "next/image";
 
-const arrowDown = require("../images/icon-arrow-down.svg");
+const heroArrow = require("../images/figma/hero-arrow.svg");
 
 export const Hero = () => {
     return (
         <section id="hero" className="relative">
-            <div className="flex flex-col items-center gap-24 pb-60 pt-12 ">
+            <div className="flex flex-col items-center gap-24 pb-60 pt-[7.5rem]">
                 <h1 className="font-fraunces text-5xl font-bold uppercase text-white">
                     We are creatives
                 </h1>
                 <a href="#about">
-                    <Image src={arrowDown} alt="arrow" width={30} height={0} />
+                    <Image src={heroArrow} alt="arrow"/>
                 </a>
             </div>
         </section>
