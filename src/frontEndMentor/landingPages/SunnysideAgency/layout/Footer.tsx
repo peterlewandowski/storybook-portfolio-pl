@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export const Footer = () => {
     return (
-        <footer>
-            <div>
+        <footer className="bg-[#90D4C6]">
+            <div className="flex flex-col items-center py-16 ">
                 <Image
-                    src={require("../images/logo.svg")}
+                    src={require("../images/logo-green.svg")}
                     alt="sunnyside"
                     width={124}
                     height={24}
                 />
-                <div>
+                <div className="mt-10 grid grid-cols-3 gap-14 font-barlow text-lg font-semibold text-[#458D7E]">
                     <a href="#">About</a>
                     <a href="#">Services</a>
                     <a href="#">Projects</a>
                 </div>
-                <div>
+                <div className="mt-16 flex gap-10">
                     <Image
                         src={require("../images/icon-facebook.svg")}
                         alt="facebook"
