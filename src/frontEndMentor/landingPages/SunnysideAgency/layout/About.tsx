@@ -11,12 +11,12 @@ export const About = () => {
                         fast. Engage your clients through compelling visuals that do most of the
                         marketing for you.
                     </p>
-                    <div className="relative">
-                        <a className="p-2 font-fraunces text-lg font-black" href="#">
-                            Learn more
-                        </a>
-                        <div className="absolute bottom-0 left-0 h-3 w-32 rounded-3xl bg-[#FAD400] opacity-25" />
-                    </div>
+                    <a
+                        className="relative w-max p-2 font-fraunces text-lg font-black uppercase tracking-wider before:absolute before:bottom-[15%] before:left-0 before:-z-10 before:h-3 before:w-full before:rounded-3xl before:bg-[#FAD400] before:opacity-25 hover:before:opacity-100"
+                        href="#"
+                    >
+                        Learn more
+                    </a>
                 </div>
                 <div className="relative">
                     <Image
@@ -43,13 +43,12 @@ export const About = () => {
                         videographers, and copywriters, we’ll build and extend your brand in digital
                         places.
                     </p>
-                    <div className="relative"></div>
-                    <div className="relative">
-                        <a className="p-2 font-fraunces text-lg font-black" href="#">
-                            Learn more
-                        </a>
-                        <div className="absolute bottom-0 left-0 h-3 w-32 rounded-3xl bg-[#FE7867] opacity-25" />
-                    </div>
+                    <a
+                        className="relative w-max p-2 font-fraunces text-lg font-black uppercase tracking-wider before:absolute before:bottom-[15%] before:left-0 before:-z-10 before:h-3 before:w-full before:rounded-3xl before:bg-[#FE7867] before:opacity-25 hover:before:opacity-100"
+                        href="#"
+                    >
+                        Learn more
+                    </a>
                 </div>
                 <div className="relative">
                     <Image
