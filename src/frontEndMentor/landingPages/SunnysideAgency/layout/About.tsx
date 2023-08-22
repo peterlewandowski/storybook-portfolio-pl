@@ -1,15 +1,17 @@
 import Image from "next/image";
-import transform from "../images/desktop/image-transform.jpg"
-import standout from "../images/desktop/image-stand-out.jpg"
-import graphicDesign from "../images/desktop/image-graphic-design.jpg"
-import photography from "../images/desktop/image-photography.jpg"
+import graphicDesign from "../images/desktop/image-graphic-design.jpg";
+import photography from "../images/desktop/image-photography.jpg";
+import standout from "../images/desktop/image-stand-out.jpg";
+import transform from "../images/desktop/image-transform.jpg";
 
 export const About = () => {
     return (
         <section id="about">
             <div className="grid grid-cols-2">
                 <div className="flex flex-col gap-10 overflow-hidden p-40 pr-24">
-                    <h2 className="font-fraunces text-[2.5rem] font-black">Transform your brand</h2>
+                    <h2 className="font-fraunces text-[2.5rem] font-black leading-normal">
+                        Transform your brand
+                    </h2>
                     <p className="font-barlow font-thin">
                         We are a full-service creative agency specializing in helping brands grow
                         fast. Engage your clients through compelling visuals that do most of the
@@ -23,23 +25,13 @@ export const About = () => {
                     </a>
                 </div>
                 <div className="relative">
-                    <Image
-                        src={transform.src}
-                        alt="transform"
-                        fill
-                        objectFit="cover"
-                    />
+                    <Image src={transform.src} alt="transform" fill objectFit="cover" />
                 </div>
                 <div className="relative">
-                    <Image
-                        src={standout.src}
-                        alt="transform"
-                        fill
-                        objectFit="cover"
-                    />
+                    <Image src={standout.src} alt="transform" fill objectFit="cover" />
                 </div>
                 <div className="flex flex-col gap-10 p-40 pl-24">
-                    <h2 className="font-fraunces text-[2.5rem] font-black">
+                    <h2 className="font-fraunces text-[2.5rem] font-black  leading-normal">
                         Stand out to the right audience
                     </h2>
                     <p className="font-barlow font-thin">
@@ -71,12 +63,7 @@ export const About = () => {
                     </div>
                 </div>
                 <div className="relative">
-                    <Image
-                        src={photography.src}
-                        alt="photography"
-                        fill
-                        objectFit="cover"
-                    />
+                    <Image src={photography.src} alt="photography" fill objectFit="cover" />
                     <div className="relative flex flex-col items-center gap-6 px-40 pb-10 pt-96 text-center text-[#19536B] [&>*]:max-w-xs">
                         <h2 className="font-fraunces text-2xl font-black">Photography</h2>
                         <p className="font-barlow text-base font-semibold">
