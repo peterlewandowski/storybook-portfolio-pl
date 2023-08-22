@@ -1,15 +1,11 @@
-import Image from "next/image";
-
-const background = require("../images/figma/mae-mu-1-a-pt-yqz-naj-a-unsplash.png").default.src;
-const logo = require("../images/logo.svg");
+import LogoSvg from "../images/logo.svg";
 
 export const Header = () => {
-    console.log(background);
     return (
         <header id="header" className="relative">
             <nav className="flex flex-row justify-between">
-                <Image src={logo} alt="sunnyside" width={124} height={24} />
-                <div className="space-x-12 font-barlow text-white text-lg font-semibold">
+                <LogoSvg />
+                <div className="space-x-12 font-barlow text-lg font-semibold text-white">
                     <a href="#about">About</a>
                     <a href="#Services">Services</a>
                     <a href="#projects">Projects</a>

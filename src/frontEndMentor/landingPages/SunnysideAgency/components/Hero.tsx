@@ -1,6 +1,4 @@
-import Image from "next/image";
-
-const heroArrow = require("../images/figma/hero-arrow.svg");
+import HeroArrowIcon from "../images/icon-arrow-down.svg";
 
 export const Hero = () => {
     return (
@@ -10,7 +8,7 @@ export const Hero = () => {
                     We are creatives
                 </h1>
                 <a href="#about">
-                    <Image src={heroArrow} alt="arrow"/>
+                    <HeroArrowIcon />
                 </a>
             </div>
         </section>

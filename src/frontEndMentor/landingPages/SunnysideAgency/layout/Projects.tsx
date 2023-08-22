@@ -1,4 +1,8 @@
 import Image from "next/image";
+import cone from "../images/desktop/image-gallery-cone.jpg";
+import milkBottles from "../images/desktop/image-gallery-milkbottles.jpg";
+import orange from "../images/desktop/image-gallery-orange.jpg";
+import sugarCubes from "../images/desktop/image-gallery-sugarcubes.jpg";
 
 export const Projects = () => {
     return (
@@ -6,22 +10,41 @@ export const Projects = () => {
             <div className="flex [&>*]:flex-1">
                 <div>
                     <Image
-                        src={require("../images/desktop/image-gallery-milkbottles.jpg")}
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                        className="h-auto w-full"
+                        src={milkBottles.src}
                         alt="milk bottles"
                     />
                 </div>
                 <div>
                     <Image
-                        src={require("../images/desktop/image-gallery-orange.jpg")}
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                        className="h-auto w-full"
+                        src={orange.src}
                         alt="orange"
                     />
                 </div>
                 <div>
-                    <Image src={require("../images/desktop/image-gallery-cone.jpg")} alt="cone" />
+                    <Image
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                        className="h-auto w-full"
+                        src={cone.src}
+                        alt="cone"
+                    />
                 </div>
                 <div>
                     <Image
-                        src={require("../images/desktop/image-gallery-sugarcubes.jpg")}
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                        className="h-auto w-full"
+                        src={sugarCubes.src}
                         alt="sugar cubes"
                     />
                 </div>

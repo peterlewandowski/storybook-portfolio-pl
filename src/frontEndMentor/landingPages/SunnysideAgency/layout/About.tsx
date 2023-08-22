@@ -1,4 +1,8 @@
 import Image from "next/image";
+import transform from "../images/desktop/image-transform.jpg"
+import standout from "../images/desktop/image-stand-out.jpg"
+import graphicDesign from "../images/desktop/image-graphic-design.jpg"
+import photography from "../images/desktop/image-photography.jpg"
 
 export const About = () => {
     return (
@@ -20,7 +24,7 @@ export const About = () => {
                 </div>
                 <div className="relative">
                     <Image
-                        src={require("../images/desktop/image-transform.jpg")}
+                        src={transform.src}
                         alt="transform"
                         fill
                         objectFit="cover"
@@ -28,7 +32,7 @@ export const About = () => {
                 </div>
                 <div className="relative">
                     <Image
-                        src={require("../images/desktop/image-stand-out.jpg")}
+                        src={standout.src}
                         alt="transform"
                         fill
                         objectFit="cover"
@@ -52,7 +56,7 @@ export const About = () => {
                 </div>
                 <div className="relative">
                     <Image
-                        src={require("../images/desktop/image-graphic-design.jpg")}
+                        src={graphicDesign.src}
                         alt="transform"
                         fill
                         objectFit="cover"
@@ -68,7 +72,7 @@ export const About = () => {
                 </div>
                 <div className="relative">
                     <Image
-                        src={require("../images/desktop/image-photography.jpg")}
+                        src={photography.src}
                         alt="photography"
                         fill
                         objectFit="cover"

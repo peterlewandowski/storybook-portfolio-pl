@@ -2,7 +2,6 @@ import React from "react";
 import { Barlow, Fraunces } from "next/font/google";
 import { About, Footer, Projects, Testimonials, TopSection } from "./layout";
 
-
 const barlow = Barlow({
     subsets: ["latin"],
     weight: ["100", "200", "300", "400", "500", "600"],
