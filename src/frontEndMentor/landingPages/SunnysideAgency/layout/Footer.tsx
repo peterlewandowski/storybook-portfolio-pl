@@ -1,45 +1,40 @@
-import Image from "next/image";
+import FacebookIcon from "../images/icon-facebook.svg";
+import InstagramIcon from "../images/icon-instagram.svg";
+import PinterestIcon from "../images/icon-pinterest.svg";
+import TwitterIcon from "../images/icon-twitter.svg";
+import SunnyLogo from "../images/logo-green.svg";
+
+console.log(FacebookIcon);
 
 export const Footer = () => {
     return (
         <footer className="bg-[#90D4C6]">
-            <div className="flex flex-col items-center py-16 ">
-                <Image
-                    src={require("../images/logo-green.svg")}
-                    alt="sunnyside"
-                    width={124}
-                    height={24}
-                />
+            <div className="flex flex-col items-center px-6 py-16">
+                <SunnyLogo />
                 <div className="mt-10 grid grid-cols-3 gap-14 font-barlow text-lg font-semibold text-[#458D7E]">
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Projects</a>
+                    <a className="hover:text-white" href="#">
+                        About
+                    </a>
+                    <a className="hover:text-white" href="#">
+                        Services
+                    </a>
+                    <a className="hover:text-white" href="#">
+                        Projects
+                    </a>
                 </div>
-                <div className="mt-16 flex gap-10">
-                    <Image
-                        src={require("../images/icon-facebook.svg")}
-                        alt="facebook"
-                        width={24}
-                        height={24}
-                    />
-                    <Image
-                        src={require("../images/icon-instagram.svg")}
-                        alt="instagram"
-                        width={24}
-                        height={24}
-                    />
-                    <Image
-                        src={require("../images/icon-twitter.svg")}
-                        alt="twitter"
-                        width={24}
-                        height={24}
-                    />
-                    <Image
-                        src={require("../images/icon-pinterest.svg")}
-                        alt="pinterest"
-                        width={24}
-                        height={24}
-                    />
+                <div className="mt-16 flex gap-10 [&>*]:cursor-pointer [&>*]:hover:[&>*>*]:fill-white">
+                    <span>
+                        <FacebookIcon />
+                    </span>
+                    <span>
+                        <InstagramIcon />
+                    </span>
+                    <span>
+                        <TwitterIcon />
+                    </span>
+                    <span>
+                        <PinterestIcon />
+                    </span>
                 </div>
             </div>
         </footer>
