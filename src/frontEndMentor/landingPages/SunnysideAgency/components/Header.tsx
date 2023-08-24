@@ -1,11 +1,12 @@
+import HamburgerIcon from "../images/icon-hamburger.svg";
 import LogoSvg from "../images/logo.svg";
 
 export const Header = () => {
     return (
         <header id="header" className="relative">
             <nav className="flex flex-row justify-between">
-                <LogoSvg />
-                <div className="space-x-12 font-barlow text-lg font-semibold text-white">
+                <LogoSvg className="pt-1" />
+                <div className="hidden space-x-12 font-barlow text-lg font-semibold text-white md:block">
                     <a href="#about">About</a>
                     <a href="#Services">Services</a>
                     <a href="#projects">Projects</a>
@@ -15,6 +16,11 @@ export const Header = () => {
                     >
                         Contact
                     </a>
+                </div>
+                <div className="block cursor-pointer md:hidden [&>*]:hover:[&>*>*]:fill-white/50">
+                    <span>
+                        <HamburgerIcon />
+                    </span>
                 </div>
             </nav>
         </header>
