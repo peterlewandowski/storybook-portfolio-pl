@@ -25,26 +25,20 @@ export const Header = () => {
                         className={cn("mt-1", { "[&>*]:fill-white/50": toggleMobileNav })}
                     />
                 </div>
-
-                {/* Mobile Drawer */}
-                {/* {toggleMobileNav ? (
-                    <div className="mt-7">
-                        <div className="flex flex-row-reverse">
-                            <div className="h-0 w-0 border-x-[12px] border-y-[12px] border-b-[12px] border-r-[12px] border-solid border-x-transparent border-y-transparent border-b-white border-r-white"></div>
-                        </div>
-                    </div>
-                ) : null} */}
-
                 <ul
                     className={cn([
-                        "md:flex-row md:items-stretch md:gap-12 md:bg-transparent md:p-0 md:font-barlow md:text-lg md:font-semibold md:text-white",
-                        !toggleMobileNav && "hidden [&>li]:hidden",
-                        toggleMobileNav &&
-                            "absolute top-20 z-10 flex flex-col items-center gap-8 bg-white p-10 text-xl font-semibold text-slate-500 md:static",
+                        "md:flex-row md:items-stretch md:gap-12 md:bg-transparent md:p-0 md:font-barlow md:text-lg md:font-semibold md:text-white md:before:hidden",
 
+                        // Hide navigation items on small screens
+                        !toggleMobileNav && "hidden md:flex",
+
+                        // Mobile navigation styles
                         toggleMobileNav &&
-                            "after:border-[transparent_transparent_white_transparent]after:absolute after:-top-[20px] after:right-0 after:border-[0_0_20px_20px]",
-                        // "after:-top-[20px] after:right-0 after:h-0 after:w-0 after:border-x-[12px] after:border-y-[12px] after:border-b-[12px] after:border-r-[12px] after:border-solid after:border-x-transparent after:border-y-transparent after:border-b-white after:border-r-white ",
+                            "absolute right-0 top-20 z-10 flex flex-col items-center gap-8 bg-white p-10 text-xl font-semibold text-slate-500",
+
+                        // Right triangle styles
+                        toggleMobileNav &&
+                            "before:absolute before:-top-[20px] before:right-0 before:h-0 before:w-0 before:border-x-[10px] before:border-y-[10px] before:border-b-[10px] before:border-r-[10px] before:border-solid before:border-x-transparent before:border-y-transparent before:border-b-white before:border-r-white",
                     ])}
                 >
                     <li>
