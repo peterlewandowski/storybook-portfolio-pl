@@ -25,16 +25,17 @@ export const Header = () => {
                         className={cn("mt-1", { "[&>*]:fill-white/50": toggleMobileNav })}
                     />
                 </div>
+                {/* TODO: mobileNav stretch to viewport width with margins */}
                 <ul
                     className={cn([
-                        "md:flex-row md:items-stretch md:gap-12 md:bg-transparent md:p-0 md:font-barlow md:text-lg md:font-semibold md:text-white md:before:hidden",
+                        "md:static md:flex-row md:items-stretch md:gap-12 md:bg-transparent md:p-0 md:font-barlow md:text-lg md:font-semibold md:text-white md:before:hidden",
 
                         // Hide navigation items on small screens
                         !toggleMobileNav && "hidden md:flex",
 
                         // Mobile navigation styles
                         toggleMobileNav &&
-                            "absolute right-0 top-20 z-10 flex flex-col items-center gap-8 bg-white p-10 text-xl font-semibold text-slate-500",
+                            "absolute right-0 top-20 z-10 w-full flex flex-col items-center gap-8 bg-white p-10 text-xl font-semibold text-slate-500",
 
                         // Right triangle styles
                         toggleMobileNav &&
