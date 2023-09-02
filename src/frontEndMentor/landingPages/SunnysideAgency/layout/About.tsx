@@ -7,8 +7,8 @@ import transform from "../images/desktop/image-transform.jpg";
 export const About = () => {
     return (
         <section id="about">
-            <div className="grid grid-cols-2">
-                <div className="flex flex-col gap-10 overflow-hidden p-40 pr-24">
+            <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2">
+                <div className="flex flex-col gap-10 overflow-hidden px-6 md:p-40 md:pr-24">
                     <h2 className="font-fraunces text-[2.5rem] font-black leading-normal">
                         Transform your brand
                     </h2>
@@ -25,12 +25,14 @@ export const About = () => {
                     </a>
                 </div>
                 <div className="relative">
-                    <Image src={transform.src} alt="transform" fill objectFit="cover" />
+                    {/* <Image src={transform.src} alt="transform" width={100} height={100} /> */}
+                    <Image src={transform.src} alt="transform" fill objectFit="cover" className="h-auto" />
                 </div>
                 <div className="relative">
-                    <Image src={standout.src} alt="transform" fill objectFit="cover" />
+                    {/* <Image src={standout.src} alt="standout" width={100} height={100} /> */}
+                    <Image src={standout.src} alt="standout" fill objectFit="cover" />
                 </div>
-                <div className="flex flex-col gap-10 p-40 pl-24">
+                <div className="flex flex-col gap-10 px-6 md:p-40 md:pl-24">
                     <h2 className="font-fraunces text-[2.5rem] font-black  leading-normal">
                         Stand out to the right audience
                     </h2>
